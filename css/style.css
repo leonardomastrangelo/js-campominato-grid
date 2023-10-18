@@ -1,14 +1,16 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+main {
+    background-color: beige;
+}
 #play-ground {
-    width: 900px;
-    height: 900px;
-    margin: 30px auto;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #bc6c25;
 }
 
 .square {
@@ -20,6 +22,6 @@ body {
 }
 
 .active {
-    background-color: aqua;
+    background-color: #606c38;
     color: black;
 }
