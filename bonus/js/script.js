@@ -29,13 +29,13 @@ function myApp() {
         // creo il ciclo per stampare i quadrati
         for (let i = 0; i < numSquares; i++) {
             // genero un quadrato tramite funzione che si ripeterà in base al numero totale di quadrati
-            let square = drawSquare(numSquares);
+            let square = drawSquare(numSquares,i);
             // appendo il quadrato nel playground
             playGround.append(square);
         }
 
         // DRAWING FUNCTION
-        function drawSquare(totalSquares) {
+        function drawSquare(totalSquares,index) {
             // creo il quadrato
             const squareEl = document.createElement("div");
             // aggiungo al quadrato la classe .square
@@ -43,7 +43,9 @@ function myApp() {
             // decido quanto sarà grande il quadrato in base al numero totale di quadrati
             let squareWidth = Math.sqrt(numSquares);
             squareEl.style.width = `calc(100% / ${squareWidth})`
-            squareEl.style.height =  squareEl.style.width 
+            squareEl.style.height =  squareEl.style.width
+            // inserisco il numero nel quadrato
+            squareEl.innerHTML = index + 1 
             // aggiungo l'evento al click che fa cambiare il colore di sfondo del quadrato
             squareEl.addEventListener("click", function() {
                 squareEl.classList.add("active")
