@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#play-ground {
+    width: 900px;
+    height: 900px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.square {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.active {
+    background-color: aqua;
+    color: black;
+}
