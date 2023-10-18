@@ -15,13 +15,16 @@ function myApp() {
         // (1) lvl-1 : n quadrati = 100
         if (difficulty === "lvl-1") {
             numSquares = 100;
-        } else if (difficulty === "lvl-2") {
+        } 
+        // (2) lvl-2 : n quadrati = 81
+        else if (difficulty === "lvl-2") {
             numSquares = 81;
-        } else if (difficulty === "lvl-3") {
+        } 
+        // (3) lvl-3 : n quadrati = 49
+        else if (difficulty === "lvl-3") {
             numSquares = 49;
             
         }
-        console.log(numSquares, difficulty);
         // catturo play-ground in variabile
         const playGround = document.getElementById("play-ground");
         // svuoto il play-ground come reset 
